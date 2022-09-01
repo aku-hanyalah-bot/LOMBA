@@ -1,46 +1,104 @@
-:root {
-    --first-color: rgba(27, 38, 44, 1);
-    --second-color: rgba(15, 76, 117, 1);
-    --third-color: rgba(50, 130, 184, 1);
-    --four-color: rgba(187, 225, 250, 1);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-    --main-font: "Poppins", sans-serif;
+:root {
+    --first-color:#1B262C;
+    --second-color:#0F4C75;
+    --third-color:#3282B8;
+    --fourth-color:#BBE1FA;
 }
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--main-font);
+    font-family: 'Poppins', sans-serif;
+    
 }
 body {
-    outline: 5px solid green;
+    /* outline: 5px solid green; */
+    height: 100vh;
+    width: 100%;
+}
+body::selection{
+    background-color: var(--fourth-color);
+    color: white;
 }
   /* !NAVBAR */
-.navbar {
-    position: absolute;
-}
 .navbar-brand {
     font-size: 26px;
     line-height: 54px;
     color: var(--second-color) !important;
+    padding-left: 20px;
+}
+.navbar-brand img{
+    width: 50px;
+    margin-bottom: 15px;
 }
 .navbar-brand span {
     margin-left: 15px;
 }
 .navbar-brand b {
     color: var(--second-color);
-    font-weight: bold;
+    font-weight: bolder;
 }
 .active {
     color: var(--second-color) !important;
 }
 .nav-link {
-    font-size: 22px;
+    font-size: 20px;
     color: rgba(48, 91, 119, 0.63);
 }
-.nav-link:hover {
+.nav-link:hover, .nav-link:focus, .login{
     color: var(--second-color);
 }
-.login {
+.login img{
+    margin-left: 15px;
+}
+
+/* !HEADER */
+header{
+    background: url(image/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+.header{
+    display: flex;
+}
+.title-header{
+    width: 500px;
+
+    position: absolute;
+height: 207px;
+left: 59px;
+top: 206px;
+}
+.title-header h1{
+    line-height: 60px;
+    font-weight: 900;
     color: var(--second-color);
+}
+.title-header h5{
+    line-height: 30px;
+    margin-top: 20px;
+    color: rgba(26, 37, 43, 0.5);
+}
+.img-header{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 720px;
+    top: 356px;
+
+    background: var(--second-color);
+    border-radius: 60px 100px 60px 100px ;
+}
+.img-header img{
+position: relative;
+width: 416px;
+height: 469px;
+left: 45px;
+bottom: 169px;
 }
