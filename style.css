@@ -7,22 +7,13 @@
     --third-color:#3282B8;
     --fourth-color:#BBE1FA;
 }
-  * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    
 }
-body {
-    /* outline: 5px solid green; */
-    height: 100vh;
-    width: 100%;
-}
-body::selection{
-    background-color: var(--fourth-color);
-    color: white;
-}
+
   /* !NAVBAR */
 .navbar-brand {
     font-size: 26px;
@@ -41,6 +32,7 @@ body::selection{
     color: var(--second-color);
     font-weight: bolder;
 }
+
 .active {
     color: var(--second-color) !important;
 }
@@ -81,34 +73,29 @@ header{
     margin-top: 20px;
     color: rgba(26, 37, 43, 0.5);
 }
-.img-header{
-    /* position: absolute; */
-    margin-top: 14rem;
-    margin-left: 8rem;
-    width: 500px;
-    height: 300px;
-    left: 720px;
-    top: 356px;
 
-    background: var(--second-color);
+.col-6{
+    height: 70vh;
+
 }
-.img-header img{
-position: relative;
-width: 416px;
-height: 469px;
-left: 45px;
-bottom: 169px;
+.image-header {
+    width: 100%;
+    height: auto;
+    position: relative;
 }
+
+
 .card-hero{
     background: rgba(15, 76, 117, 0.3);
     backdrop-filter: blur(8px) !important;
     border-radius: 20px;
     border: none;
     position: absolute;
-    top: 485px;
-    left: 793px;
+    margin-top: 300px;
+    margin-right: 800px;
     width: 342.63px;
     height: 110.92px;
+    z-index: 2;
 }
 .img-fluid {
     position: relative;
@@ -135,15 +122,14 @@ bottom: 169px;
 }
 
 
-/* MAIN */
+/* !MAIN */
 .main , .jenis-penyakit, .search-penyakit{
     background: #F8F8F8;
     border: 1px solid #AFC1CE;
-    ;
 }
 .search{
     padding: 3rem;
-    width: 80%;
+    width: 85%;
 }
 .search p{
     color: var(--second-color);
@@ -153,7 +139,6 @@ bottom: 169px;
     background: #0F4C75;
     color: white;
 }
-
 .scroll{
     width: 100%;
     height: 250px;
@@ -173,12 +158,47 @@ bottom: 169px;
     padding-left: 10px;
     padding-top:5px ;
 }
+
 .jenis-penyakit{
-    height: 400px;
-    align-items: center;
+    padding: 50px 0px 55px 0px;
     display: flex;
-    width: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.jenis-penyakit img{
+    border: 1px solid var(--second-color);
+    border-radius: 50%;
+    padding: 3px;
 }
 .content-penyakit{
-
+    padding-top: 35px;
+}
+.content-penyakit h5{
+    color: var(--second-color);
+}
+.content-penyakit p {
+    color: rgba(26, 37, 43, 0.5);
+    font-size: 16px;
+}
+.btn-detail{
+    color: var(--second-color);
+    border: 1px solid var(--second-color);
+    padding: 8px 60px 8px 60px ;
+    margin-top: 20px;
+    border-radius: 0;
+    font-size: 17px;
+}
+.btn-detail:hover{
+    background-color: var(--second-color);
+    color: white;
+}
+.search input ,button, .card-filter{
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    border: 1px solid #0f4c7565;
+}
+.search input:focus{
+    border: 1px solid #3282B8;
 }
