@@ -28,7 +28,7 @@
                     <div class="top-menu navbar-nav ms-auto">
                         <a class="nav-link mx-3" aria-current="page" href="#">Beranda</a>
                         <a class="nav-link mx-3" href="#">Rumah Sakit</a>
-                        <a class="nav-link active mx-3" href="#">Penyakit</a>
+                        <a class="nav-link active mx-3" href="/diseases.html">Penyakit</a>
                         <a class="nav-link mx-3" href="#">Tentang</a>
                         <a class="nav-link mx-3 login" href="#">Masuk <img src="/image/icon/icon-login.svg" alt="icon-login" /></a>
                     </div>
@@ -40,7 +40,7 @@
     <div class="container-fluid">
         <div class="jenis-penyakit">
             <div class="row">
-                <div class="col-6 ps-5 title-penyakit">
+                <div class="col-md-12 col-lg-6 ps-5 title-penyakit">
                     <div class="content-penyakit">
                         <img src="/image/penyakit/img-jerawat.jpg" alt="">
                         <p>Nama Penyakit</p> 
@@ -57,13 +57,13 @@
                         <p>Paru-paru adalah organ pernapasan atau respirasi yang ada dalam tubuh. Paru-paru berhubungan dengan sistem pernapasan serta sirkulasi atau peredaran darah. Paru-paru ada di dalam tubuh vertebrata yang bernapas dengan menggunakan udara. Fungsi dari paru-paru adalah untuk menukar oksigen dari udara yang dihirup. Dari oksigen menjadi karbon dioksida. Paru-paru adalah salah satu organ yang mempengaruhi kesehatan. Ketika fungsi paru-paru terganggu, maka kesehatan tubuh juga akan terpengaruh oleh gangguan itu.</p>
                     </div>
                 </div>
-                <div class="col-6 pe-0">
+                <div class="details col-md-12 col-lg-6 pe-0">
                     <div class="detail-penyakit float-end">
                         <h3>Penjelasan</h3>
-                        <div class="accordions">
-                            <div class="accordion-explanation ">
-                                <input type="checkbox" id="first">
-                                <label class="acc-label" for="first">
+                        <div class="accordions accordion-flush" id="accordionExample">
+                            <div class="accordion-explanation accordion-item ">
+                                <input type="checkbox" id="first" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <label class="acc-label accordion-button collapsed" for="first">
                                     <img src="/image/penyakit/icon-accordion-1.svg" alt="">
                                     <div class="title-label row">
                                         <h5>Penjelasan Penyakit</h5>
@@ -75,10 +75,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordions">
-                            <div class="accordion-explanation">
-                                <input type="checkbox" id="second">
-                                <label class="acc-label" for="second">
+                        <div class="accordions accordion-flush" id="accordionExample">
+                            <div class="accordion-explanation accordion-item">
+                                <input type="checkbox" id="second" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <label class="acc-label accordion-button collapsed" for="second">
                                     <img src="/image/penyakit/icon-accordion-2.svg" alt="">
                                     <div class="title-label row">
                                         <h5>Penyebab Penyakit</h5>
@@ -94,10 +94,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordions">
-                            <div class="accordion-explanation">
-                                <input type="checkbox" id="third">
-                                <label class="acc-label" for="third">
+                        <div class="accordions accordion-flush" id="accordionExample">
+                            <div class="accordion-explanation accordion-item" id="flush-headingOne">
+                                <input type="checkbox" id="third" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <label class="acc-label accordion-button collapsed" for="third">
                                     <img src="/image/penyakit/icon-accordion-3.svg" alt="">
                                     <div class="title-label row pe-5">
                                         <h5>Obat Penyakit</h5>
@@ -110,10 +110,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordions">
-                            <div class="accordion-explanation">
+                        <div class="accordions accordion-flush" id="accordionExample">
+                            <div class="accordion-explanation accordion-item" id="flush-headingOne">
                                 <input type="checkbox" id="fourth">
-                                <label class="acc-label" for="fourth">
+                                <label class="acc-label accordion-button collapsed" for="fourth" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                     <img src="/image/penyakit/icon-accordion-4.svg" alt="">
                                     <div class="title-label row">
                                         <h5>Saran Rumah Sakit</h5>

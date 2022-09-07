@@ -15,46 +15,39 @@
   </head>
   <body>
     <!-- *NAVBAR* -->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-expand-md py-4">
+      <nav class="navbar navbar-expand-md navbar-expand-lg navbar-expand-xl py-4">
         <div class="container-fluid px-5">
-          <a class="navbar-brand" href="#"><img src="image/brand-2.png" /><span>His</span><b>CARE</b></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav d-flex justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item"><a class="nav-link mx-3" href="#">Beranda</a></li>
-                  <li class="nav-item"><a class="nav-link mx-3" href="#">Rumah Sakit</a></li>
-                  <li class="nav-item"><a class="nav-link active mx-3" aria-current="page"  href="#">Penyakit</a></li>
-                  <li class="nav-item"><a class="nav-link mx-3" href="#">Tentang</a></li>
-                  <li class="nav-item"><a class="nav-link mx-3 login" href="#">Masuk <img src="image/icon/icon-login.svg" alt="" /></a></li>
+            <a class="navbar-brand" href="#"><img src="/image/brand-2.png" alt="brand-2"/><span>His</span><b>CARE</b></a>
+                <ul class="top-menu navbar-nav ms-auto">
+                  <li><a class="nav-link mx-3" aria-current="page" href="#">Beranda</a>
+                  </li>
+                  <li><a class="nav-link mx-3" href="#">Rumah Sakit</a></li>
+                  <li><a class="nav-link active mx-3" href="#">Penyakit</a></li>
+                  <li><a class="nav-link mx-3" href="#">Tentang</a></li>
+                  <li><a class="nav-link mx-3 login" href="#">Masuk <img src="/image/icon/icon-login.svg" alt="icon-login" /></a></li>
                 </ul>
+              <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
-            </div>
-          </div>
         </div>
-      </nav>
-
+    </nav>
 
     <!-- *HERO -->
-
+    <header>
     <div class=" container-fluid px-5">
         <div class=" header px-3">
           <div class="row">
-            <div class="col-6">
-              <div class="title-header">
-                <h1>Cari Jenis Penyakit, Dan temukan solusinya</h1>
-                <h5>Cari berbagai jenis penyakit,<br>penyebab dan solusinya</h5>
-              </div>
+            <div class="title-disease col-sm-12 col-md-6 col-lg-6">
+                <div class="title-header">
+                  <h1>Cari Jenis Penyakit, Dan temukan solusinya</h1>
+                  <h5>Cari berbagai jenis penyakit, penyebab dan solusinya</h5>
+                </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-sm-12 col-md-6 col-lg-6">
               <div class="row float-end" >
                 <div class="col-3 mt-5">
                   <div class="card-ad card card-hero mb-3">
@@ -87,11 +80,11 @@
     <main>
       <div class="main container-fluid">
         <div class="row">
-          <div class="col-md-4 col-lg-4 search-penyakit">
+          <div class="col-sm-12 col-md-4 col-lg-4 search-penyakit">
             <div class="search">
               <p class="mb-2">Nama Penyakit</p>
             <div class="d-flex mb-4">
-            <input class="form-control" type="search" placeholder="Cari" aria-label="default input example">
+            <input class="form-control input-search" type="search" placeholder="Cari" aria-label="default input example">
             <button class="btn button-search" type="submit"><img src="image/icon/icon-search.svg" alt=""></button>
           </div>
           <p class="mb-2">Gejala</p>
@@ -100,6 +93,7 @@
           </div>
           <div class="card card-filter mb-4" style="width: 100%;">
             <div class="card-body">
+              <button class="kualifikasi">Kualifikasi</button>
               <p class="card-text">Kualifikasi</p>
               <input class="input-filter form-control mb-3" type="text" placeholder="Cari" aria-label="default input example">
               <div class="scroll">
@@ -224,7 +218,7 @@
           </div>
         </div>
           </div>
-          <div class="list-penyakit col-md-8 col-lg-8 ">
+          <div class="list-penyakit col-sm-12 col-md-8 col-lg-8 ">
             <div class=" row">
               <div class="jenis-penyakit col-4">
                 <img src="image/penyakit/asam-lambung.png" alt="">
@@ -309,5 +303,13 @@
     </main>
 
     <script src="/assets/bootstrap/js/bootstrap.bundle.js"></script>
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle input');
+      const nav = document.querySelector('nav ul');
+  
+      menuToggle.addEventListener('click', function (){
+        nav.classList.toggle('slide')
+      })
+    </script>
   </body>
 </html>
