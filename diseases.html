@@ -18,6 +18,13 @@
       <nav class="navbar navbar-expand-md navbar-expand-lg navbar-expand-xl py-4">
         <div class="container-fluid px-5">
             <a class="navbar-brand" href="#"><img src="/image/brand-2.png" alt="brand-2"/><span>His</span><b>CARE</b></a>
+            <div class="menu-toggle">
+              <input type="checkbox">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="navbar-links">
                 <ul class="top-menu navbar-nav ms-auto">
                   <li><a class="nav-link mx-3" aria-current="page" href="#">Beranda</a>
                   </li>
@@ -26,11 +33,6 @@
                   <li><a class="nav-link mx-3" href="#">Tentang</a></li>
                   <li><a class="nav-link mx-3 login" href="#">Masuk <img src="/image/icon/icon-login.svg" alt="icon-login" /></a></li>
                 </ul>
-              <div class="menu-toggle">
-                <input type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
               </div>
         </div>
     </nav>
@@ -82,18 +84,17 @@
         <div class="row">
           <div class="col-sm-12 col-md-4 col-lg-4 search-penyakit">
             <div class="search">
-              <p class="mb-2">Nama Penyakit</p>
+              <p class="nm-disease mb-2">Nama Penyakit</p>
             <div class="d-flex mb-4">
             <input class="form-control input-search" type="search" placeholder="Cari" aria-label="default input example">
             <button class="btn button-search" type="submit"><img src="image/icon/icon-search.svg" alt=""></button>
           </div>
-          <p class="mb-2">Gejala</p>
+          <p class="nm-symptom mb-2">Gejala</p>
           <div class="d-flex mb-4">
             <input class="input-gejala form-control" type="text" placeholder="Batuk" aria-label="default input example">
           </div>
           <div class="card card-filter mb-4" style="width: 100%;">
             <div class="card-body">
-              <button class="kualifikasi">Kualifikasi</button>
               <p class="card-text">Kualifikasi</p>
               <input class="input-filter form-control mb-3" type="text" placeholder="Cari" aria-label="default input example">
               <div class="scroll">
@@ -218,9 +219,10 @@
           </div>
         </div>
           </div>
+          <div class="list-diseases">
           <div class="list-penyakit col-sm-12 col-md-8 col-lg-8 ">
             <div class=" row">
-              <div class="jenis-penyakit col-4">
+              <div class="jenis-penyakit col-sm-6 col-lg-4">
                 <img src="image/penyakit/asam-lambung.png" alt="">
                 <div class="content-penyakit">
                   <h5>Asam Lambung</h5>
@@ -228,7 +230,7 @@
                   <a class="btn-detail" href="/diseases/asam-lambung.html">Detail</a> 
                 </div>
               </div>
-              <div class="jenis-penyakit col-4  bg-light">
+              <div class="jenis-penyakit col-sm-6 col-lg-4  bg-light">
                 <img src="image/penyakit/jerawat.png" alt="">
                 <div class="content-penyakit">
                   <h5>Jerawat</h5>
@@ -236,7 +238,7 @@
                   <a class="btn-detail" href="/diseases/jerawat.html">Detail</a> 
                 </div>
               </div>
-              <div class="jenis-penyakit col-4  bg-light">
+              <div class="jenis-penyakit col-sm-6 col-lg-4  bg-light">
                 <img src="image/penyakit/arteri-koroner.png" alt="">
                 <div class="content-penyakit">
                   <h5>Arteri Koroner</h5>
@@ -246,7 +248,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="jenis-penyakit col-4 bg-light">
+              <div class="jenis-penyakit col-sm-6 col-lg-4 bg-light">
                 <img src="image/penyakit/osteoporosis.png" alt="">
                 <div class="content-penyakit">
                   <h5>Osteoporosis</h5>
@@ -254,7 +256,7 @@
                   <a class="btn-detail" href="/diseases/osteoporosis.html">Detail</a> 
                 </div>
               </div>
-              <div class="jenis-penyakit col-4  bg-light">
+              <div class="jenis-penyakit col-sm-6 col-lg-4  bg-light">
                 <img src="image/penyakit/batu-ginjal.png" alt="">
                 <div class="content-penyakit">
                   <h5>Batu Ginjal</h5>
@@ -262,7 +264,7 @@
                   <a class="btn-detail" href="/diseases/batu-ginjal.html">Detail</a> 
                 </div>
               </div>
-              <div class="jenis-penyakit col-4  bg-light">
+              <div class="jenis-penyakit col-sm-6 col-lg-4  bg-light">
                 <img src="image/penyakit/kolitis-ulseratif.png" alt="">
                 <div class="content-penyakit">
                   <h5>Kolitis Ulseratif</h5>
@@ -272,7 +274,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="jenis-penyakit col-4 bg-light">
+              <div class="jenis-penyakit col-sm-6 col-lg-4 bg-light">
                 <img src="image/penyakit/paru-paru-basah.png" alt="">
                 <div class="content-penyakit">
                   <h5>Paru-Paru Basah</h5>
@@ -280,7 +282,7 @@
                   <a class="btn-detail" href="/diseases/paru-paru-basah.html">Detail</a> 
                 </div>
               </div>
-              <div class="jenis-penyakit col-4  bg-light">
+              <div class="jenis-penyakit col-sm-6 col-lg-4  bg-light">
                 <img src="image/penyakit/konjungtivitis.png" alt="">
                 <div class="content-penyakit">
                   <h5>Konjungtivitis</h5>
@@ -288,7 +290,7 @@
                   <a class="btn-detail" href="/diseases/konjungtivis.html">Detail</a> 
                 </div>
               </div>
-              <div class="jenis-penyakit col-4  bg-light">
+              <div class="jenis-penyakit col-sm-6 col-lg-4  bg-light">
                 <img src="image/penyakit/toksoplasmosis.png" alt="">
                 <div class="content-penyakit">
                   <h5>Toksoplasmosis</h5>
@@ -297,6 +299,7 @@
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>
