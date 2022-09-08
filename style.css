@@ -478,13 +478,6 @@ body{
     }
     
     /* LIST PENYAKIT */
-    .list-diseases{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex: 1;
-        flex-direction: row !important;
-    }
     .list-penyakit{
         width: 100%;
         height: 400px !important;
@@ -770,7 +763,7 @@ body{
 }
 
 /* ?FULL HD */
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1900px) {
 /* !NAVBAR */
 .navbar{
     padding-top: 3rem !important;
