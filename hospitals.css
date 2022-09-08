@@ -39,15 +39,16 @@ header {
   font-weight: bolder;
 }
 .active {
-  color: var(--second-color) !important;
+  color: var(--fourth-color) !important;
 }
 .nav-link {
   font-size: 20px;
-  color: var(--fourth-color);
+  color: rgba(187, 225, 250, 0.5);
+  font-weight: 500;
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: var(--second-color);
+  color: var(--fourth-color);
 }
 .login {
   color: var(--fourth-color);
