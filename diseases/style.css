@@ -230,7 +230,7 @@ input:checked ~ .acc-content {
   padding: 1em;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   html,
   body {
     overflow: hidden;
@@ -441,7 +441,7 @@ input:checked ~ .acc-content {
     } */
 }
 
-@media only screen and (max-width: 820px) {
+@media screen and (max-width: 820px) {
   .navbar-brand {
     font-size: 18px;
     line-height: 54px;
@@ -665,7 +665,7 @@ input:checked ~ .acc-content {
 }
 
 /* FULL HD */
-@media only screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) {
   /* !NAVBAR */
   .navbar {
     margin-top: 20px;
