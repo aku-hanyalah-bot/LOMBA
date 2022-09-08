@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --first-color: #1b262c;
+  --second-color: #0f4c75;
+  --third-color: #3282b8;
+  --fourth-color: #bbe1fa;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  background: url(image/bg-hospitals.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+/* !NAVBAR */
+.navbar-brand {
+  font-size: 26px;
+  line-height: 54px;
+  color: var(--fourth-color) !important;
+  padding-left: 20px;
+}
+.navbar-brand img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+.navbar-brand span {
+  margin-left: 15px;
+}
+.navbar-brand b {
+  color: var(--fourth-color);
+  font-weight: bolder;
+}
+.active {
+  color: var(--second-color) !important;
+}
+.nav-link {
+  font-size: 20px;
+  color: var(--fourth-color);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--second-color);
+}
+.login {
+  color: var(--fourth-color);
+}
+.login img {
+  margin-left: 15px;
+}
+/* !JUMBOTRON */
+.jumbotron {
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 22vh;
+}
+.jumbotron p {
+  letter-spacing: 0.005em;
+  color: rgba(254, 254, 254, 0.75);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+}
+.jumbotron h1 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 78px;
+  width: 100%;
+}
+/* !HOSPITAL SERVICE*/
+.popular-hospitals {
+  background: linear-gradient(177.59deg, #c4c4c4 -1.41%, #ffffff -1.38%, #bbe1fa 277.26%);
+  height: 110vh;
+}
+.title-popular-hospitals {
+  margin-top: 100px;
+  text-align: center;
+}
+.title-popular-hospitals h3 {
+  color: var(--third-color);
+  font-weight: 500;
+  line-height: 42px;
+}
+.title-popular-hospitals h1 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 75px;
+  color: #1a252b;
+}
+.main-populer-hospitals {
+  padding-top: 80px;
+}
+.img-populer-2 {
+  margin-left: 20px;
+  padding-bottom: 23px;
+}
+.img-popular-3 {
+  margin-left: 20px;
+}
+.text-populer-hospital {
+  margin-left: 35px;
+  margin-top: 70px;
+}
+.text-populer-hospital p {
+  font-size: 18px;
+  color: #0c4b75;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  width: 530px;
+}
+.text-populer-hospital h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  text-transform: capitalize;
+  color: #232631;
+}
+p.detail-populer-hospitals {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #848484;
+}
+.data-populer-hospitals {
+  margin-left: 35px;
+  padding-top: 20px;
+}
+.data-populer-hospitals h5 {
+  color: #232631;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+.data-populer-hospitals p {
+  color: #848484;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  width: 161px;
+}
+.btn-populer-hospitals-1 {
+  width: 211px;
+  height: 48px;
+  background: #0c4b75;
+  border-radius: 12px;
+  margin-left: 35px;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.btn-populer-hospitals-1:focus {
+  box-shadow: none;
+}
+.btn-populer-hospitals-2 {
+  color: #7b7b7b;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 50px;
+}
+/* !HOSPITAL SERVICE */
+.hospital-service {
+  background: linear-gradient(0.45deg, #ffffff 10.14%, #ffffff 10.17%, #bbe1fa 279.27%);
+}
+.title-service-hospitals {
+  text-align: center;
+  margin-top: 100px;
+}
+.title-service-hospitals h3 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  color: var(--third-color);
+}
+.title-service-hospitals h1 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 75px;
+  color: #1a252b;
+}
+.button-service-hospitals {
+  text-align: center;
+  background: #ffffff;
+  border-radius: 12px;
+  width: 416px;
+  height: 67px;
+  padding-top: 12px;
+  margin-left: 60vh;
+}
+.button-service-hospitals-1 {
+  background: #0c4b75;
+  border-radius: 12px;
+  width: 82px;
+  height: 43px;
+  padding-top: 10px;
+}
+
+.button-service-hospitals-1:hover,
+.button-service-hospitals-2:hover,
+.button-service-hospitals-3:hover {
+  color: #0c4b75;
+}
+.button-service-hospitals-1:focus,
+.button-service-hospitals-2:focus,
+.button-service-hospitals-3:focus {
+  box-shadow: none;
+}
+
+.button-service-hospitals-2,
+.button-service-hospitals-3 {
+  color: #0c4b75;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+/* !HOSPITAL */
+.product-hospital {
+  margin-top: 7rem;
+}
+.btn-service-hospital button {
+  background: rgba(50, 88, 232, 0.1);
+  border-radius: 12px;
+  color: #0c4b75;
+  letter-spacing: 0.005em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  margin-left: 5px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+button:focus {
+  box-shadow: none !important;
+}
+.hospital-1,
+.card {
+  background: #ffffff;
+  border-radius: 24px;
+  width: 384px;
+  height: 563px;
+  border: none;
+  padding-top: 12px;
+}
+.card-body-hospital {
+  margin-left: 20px;
+}
+.img-hospital-1 {
+  width: 350px;
+  margin-left: 20px;
+}
+.card-title-hospital {
+  color: #232631;
+  letter-spacing: 0.005em;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  padding-top: 15px;
+  margin-left: 5px;
+}
+.location {
+  color: #848484;
+  text-decoration: none;
+}
+
+.rating-hospital {
+  padding-top: 10px;
+}
+.rating-hospital i {
+  margin-left: 6px;
+  color: #ff9900;
+}
+.btn-detail-hospitals {
+  padding-top: 20px;
+}
+.btn-detail-hospitals-1 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  background: #0c4b75;
+  border-radius: 12px;
+  color: #ffffff;
+  width: 168px;
+}
+.btn-detail-hospitals-2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--second-color);
+  margin-left: 3rem;
+}
+.btn-detail-hospitals-1:hover {
+  color: #ffffff;
+}
+.btn-detail-hospitals-1:focus,
+.btn-detail-hospitals-2:focus {
+  box-shadow: none;
+}
+.btn-detail-hospitals-2:hover {
+  color: var(--second-color);
+}
