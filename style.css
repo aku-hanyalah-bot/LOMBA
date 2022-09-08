@@ -82,8 +82,10 @@ body{
 	display: block;
 	width: 28px;
 	height: 3px;
-	background-color: white;
+    border-radius: 30px;
+	background-color: var(--second-color);
 	transition: all 0.3s;
+    z-index: 3;
 }
 
 /*HAMBURGER ANIMATION*/
@@ -94,12 +96,12 @@ body{
 	transform-origin: 0 100%;
 }
 .menu-toggle input:checked ~ span:nth-child(2){
-	background-color:red ;
+	background-color:var(--second-color) ;
 	transform: rotate(45deg) translate(-1px, -1px);
 
 }
 .menu-toggle input:checked ~ span:nth-child(4){
-	background-color:red ;
+	background-color:var(--second-color) ;
 	transform: rotate(-45deg) translate(-1px, 0);
 }
 .menu-toggle input:checked ~ span:nth-child(3){
@@ -268,7 +270,23 @@ body{
 
 /* *MOBILE */
 @media screen and (max-width: 620px){
-/* MENU */
+/* !MENU NAVBAR */
+.navbar{
+    display: block;
+    width: 100%;
+    background: #fafafa;
+    padding: 0 !important;
+    padding-top:5px !important ;
+    position: absolute;
+    z-index: 3;
+    box-shadow: 0px 4px 20px #38383836;
+}
+    .nav-link{
+        color: var(--second-color) !important;
+    }
+    .nav-link a{
+        margin-top:100px !important ;
+    }
     .navbar-brand{
         position: relative;
         right: 35px;
@@ -279,34 +297,42 @@ body{
     .menu-toggle{
 		display: flex;
 	}
-	nav ul{
-		position: absolute;
-		right: 0;
-		top: 0;
-		flex-direction: column;
-		width: 50%;
-		height: 100vh;
-		background-color: rgba(15, 76, 117, 0.3) ;
+	.navbar-links{
+        /* display: none !important; */
+		/* flex-direction: column; */
+		width: 100%;
+		
+	}
+    nav ul{
+        position: absolute;
+        top: -120px;
+        left: 0;
+        width: 100%;
+        background: #fafafa;
 		align-items: center;
-		justify-content: space-evenly;
-		z-index: 2;
-		transform: translateX(100%);
+		/* justify-content: space-evenly; */
+		transform: translateY(0);
 		transition: all 0.5s;
 		opacity: 0;
-	}
+        border-radius: 15px;
+
+    }
 
 	nav ul.slide{
-		transform: translateX(0);
+        display: flex;
+		transform: translateY(100%);
 		opacity: 1;
     }
 
+
+    /* !HEADER */
     .title-disease{
-        background: white;
+        background: #fafafa;
         background-size:cover;
         border-radius: 25px;
         position: absolute;
         left: 0;
-        margin-top: 8rem;
+        margin-top: 16rem;
         width: 500px;
         height: 200px;
     }
@@ -317,7 +343,7 @@ body{
         text-align: center;
         width: 100%;
         height: 200px !important;
-        padding-top: 1.5em;
+        padding-top: 2em;
         margin: 0 !important;
     }
     .title-header h5{
@@ -325,38 +351,113 @@ body{
         height: auto;
         margin-top: 0 !important;
     }
+    .title-header h1::before{
+        content: '';
+        display: block;
+        width: 30%;
+        border: 2px solid #0f4c75cc;
+        border-radius: 10px;
+        position: absolute;
+        right: 8em;
+        top: 13px;
+    }
     .img-header {
         width: 50%;
         height: auto;
         display: block;
         margin-top: 5px;
         position: absolute;
-        top: 60px;
+        top: 80px;
         left: 100px;
         z-index: -1;
+    }
+    .card-ad{
+        display: none;
     }
 
 /* !MAIN */
     .main{
-        z-index: -5 !important;
+        width: 100%;
+        margin-top: 11.5rem;
     }
     .search-penyakit{
+        display: block;
         width: 100% !important;
-        height: 100px !important;
+        height: 63vh !important;
     }
     .search{
         padding: 3rem;
         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
     }
     .search p{
         color: var(--second-color);
         font-weight: 500;
+        font-size: 11px;
+    }
+    .nm-disease{
+        font-size: 10px !important;
+        position: relative;
+        left: 5px;
+        bottom: 9px;
+        background-color: white;
+        z-index: 1;
+        width: auto;
+        height: 15px;
+        padding: 0px 3px 0px 3px;
+        border-radius: 2px;
+        border-left: 1px solid #0f4c7565;
+        border-right: 1px solid #0f4c7565;
+    }
+    .nm-symptom{
+        font-size: 10px !important;
+        position: relative;
+        left: 25px;
+        bottom: 9px;
+        background-color: white;
+        width: auto;
+        height: 15px;
+        padding: 0px 3px 0px 3px;
+        border-radius: 2px;
+        border-left: 1px solid #0f4c7565;
+        border-right: 1px solid #0f4c7565;
+        z-index: 1;
+    }
+    .input-gejala,
+    .input-search{
+        position: absolute;
+        display: block;
+    }
+    .d-flex .input-search{
+        left: 20px;
+        width: 130px !important;
+    }
+    .d-flex .input-gejala{
+        right: 20px;
+        width: 165px !important;
     }
     .button-search{
+        display: block;
         background: #0F4C75;
         color: white;
+        margin-left: 40px;
+    }
+
+    .card-filter{
+        display: flex;
+        flex-wrap: wrap;
+        width: 333px !important;
+    }
+    .card-filter .card-text{
+        margin: 0;
+    }
+    .input-filter{
+        display: none;
     }
     .scroll{
+        display: flex;
+        flex-wrap: wrap;
         width: 100%;
         height: 250px;
         overflow-x: hidden;
@@ -377,13 +478,32 @@ body{
     }
     
     /* LIST PENYAKIT */
+    .list-diseases{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        flex-direction: row !important;
+    }
+    .list-penyakit{
+        width: 100%;
+        height: 400px !important;
+        display: flex;
+        flex-direction: row;
+        overflow-y: hidden !important;
+        overflow-x: scroll !important;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 25px;
+        scroll-behavior: smooth;
+        position: relative;
+        column-gap: 24px;
+    }
     .jenis-penyakit{
+        position: relative;
         padding: 50px 0px 55px 0px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        flex: 0 0 100%;
+        scroll-snap-align: start;
     }
     .jenis-penyakit img{
         border: 1px solid var(--second-color);
@@ -643,7 +763,7 @@ body{
         border-radius: 4px !important;
     }
     .search .card-filter{
-        border-radius: 8px 8px 5px 5px !important ;
+        border-radius: 8px 8px 2px 2px !important ;
     }
     
 
