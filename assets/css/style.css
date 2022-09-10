@@ -994,10 +994,10 @@ iframe {
 
 /* ?FULL HD */
 @media (min-width: 1900px){
-  header{
-    height: 65vh !important;
+  .navbar {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
   }
-  /* !NAVBAR */
   .nav-link {
     font-size: 25px;
     font-weight: 400;
@@ -1048,131 +1048,5 @@ iframe {
   .input-group{
     margin-top: 50px;
   }
-  /* !SERVICES */
-  .section-services{
-    height: 80vh;
-    margin-top: 50px;
-  }
-  .main-services p{
-    width: 1000px;
-    text-align: center;
-  }
-  /* *CARD SERVICES */
-  .card-services-1,
-  .card-services-2,
-  .card-services-3,
-  .card-services-4,
-  .card-services-5 {
-  width: auto;
-  height: auto;
-  }
-  .card-body-services h5{
-    font-size: 22px;
-    position: relative;
-    bottom:50px;
-    left: 65px;
-  }
-  .card-body-services p{
-    width: 300px;
-    height: 300px;
-    font-size: 18px;
-    line-height: 28px;
-  }
-  .card-services-1 {
-    position: absolute;
-    top: 1345px;
-    left: 500px;
-  }
-  .card-services-2 {
-    position: absolute;
-    top: 1345px;
-    left: 900px;
-  }
-  .card-services-3 {
-    position: absolute;
-    top: 1345px;
-    left: 1300px;
-  }
-  .card-services-4 {
-    position: absolute;
-    top: 1345px;
-    left: 1700px;
-  }
-  .card-services-5 {
-    position: absolute;
-    top: 1345px;
-    left: 2100px;
-  }
-  /* !WORKS */
-  .section-works{
-    height: 70vh !important;
-  }
-  .main-works{
-    position: relative;
-    right: 400px;
-  }
-  .main-works p{
-    width: 100%;
-  }
-  /* CARD WOrKS */
-  .card-works-1,
-  .card-works-2,
-  .card-works-3,
-  .card-works-4{
-    width: 335px;
-    height: 222.5px;
-  }
-  .card-works-2,
-  .card-works-4{
-    margin-top: 40px;
-  }
-  /* IMG WORKS */
-  .work-img{
-    position: relative;
-    top: 300px;
-    left: 300px;
-    width: 100%;
-  }
-  /* !SPECIALIST DR */
-.section-specialist{
-  height: 50vh !important;
-}
-  /*!CUSTOMER  */
-  .section-customer-say{
-    padding-top: 100px;
-    height: 70vh !important;
-  }
-  /* !BANNER */
-  .section-banner{
-    height: 40vh;
-  }
-  .banner-img{
-    width: 100%;
-    height: auto;
-    position: relative;
-    right: 200px;
-  }
-  .img-banner{
-    height: auto;
-    width: inherit;
-    top: 2px;
-    left: 5px;
-  }
-  .content-banner{
-    position: relative;
-    left: 20px;
-  }
-  /* !FOOTER */
-  .about-footer{
-    position: relative;
-    right: 200px;
-  }
-  .main-footer{
-    position: relative;
-    left: 50px;
-  }
-  .copyright{
-    position: relative;
-    right: 200px;
-  }
+  
   }
