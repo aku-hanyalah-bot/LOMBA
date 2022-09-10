@@ -110,7 +110,7 @@
   transform: scale(0);
 }
 header {
-  background: url(image/bg-hospitals.png);
+  background: url(/image/bg-hospitals.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
