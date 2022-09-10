@@ -22,7 +22,7 @@
   <body>
     <!-- *AWAL NAVBAR* -->
     <header>
-      <nav class="navbar navbar-expand-md navbar-expand-lg bg-transparent navbar-expand-xl py-5">
+      <nav class="navbar navbar-expand-md navbar-expand-lg bg-transparent navbar-expand-xl fixed-top py-3">
         <div class="container-fluid px-5">
           <a class="navbar-brand" href="#"><img src="/image/brand-1.png" alt="brand-2" /><span>His</span><b>CARE</b></a>
           <div class="menu-toggle">
@@ -33,12 +33,12 @@
           </div>
           <div class="navbar-links">
             <ul class="top-menu navbar-nav ms-auto">
-              <li><a class="nav-link mx-3" aria-current="page" href="#">Beranda</a></li>
-              <li><a class="nav-link mx-3" href="#">Rumah Sakit</a></li>
-              <li><a class="nav-link active mx-3" href="#">Penyakit</a></li>
-              <li><a class="nav-link mx-3" href="#">Tentang</a></li>
+              <li><a class="nav-link mx-3 active" aria-current="page" href="#">Beranda</a></li>
+              <li><a class="nav-link mx-3" href="/hospitals.html">Rumah Sakit</a></li>
+              <li><a class="nav-link mx-3" href="/diseases.html">Penyakit</a></li>
+              <li><a class="nav-link mx-3" href="/about.html">Tentang</a></li>
               <li>
-                <a class="nav-link mx-3 login" href="#">Masuk <img src="/image/icon/icon-login-2.svg" alt="icon-login" /></a>
+                <a class="nav-link mx-3 login" href="/login.html">Masuk <img src="/image/icon/icon-login-2.svg" alt="icon-login" /></a>
               </li>
             </ul>
           </div>
@@ -187,7 +187,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rutrum rhoncus semper sit feugiat viverra malesuada maecenas. Amet egestas adipiscing in nisl lectus enim.</p>
               
               <div class="row card-works">
-                <div class="col-sm-12 col-4 col-xl-6">
+                <div class="col-4 col-sm-12 col-xl-6">
                   <div class="card card-works-1">
                     <img src="image/icon/icon-work-1.svg" class="img-fluid img-card-work" alt="..." />
                     <div class="card-body">
@@ -203,7 +203,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-12 col-4 col-xl-6">
+                <div class="col-4 col-sm-12 col-xl-6 ">
                   <div class="card card-works-3">
                     <img src="image/icon/icon-work-3.svg" class="img-fluid img-card-work" alt="..." />
                     <div class="card-body">
@@ -266,30 +266,30 @@
             <h2>OUR SPECIALIST TEAM</h2>
             <h1>Visit With Our Specialist Team</h1>
           </div>
-          <div class="owl-carousel owl-theme">         
+          <div class="owl-carousel owl-specialist owl-theme">         
               <div class="specialist-1">
-                <img class="card-specialist-1" src="image/img-dr-1.png"></img>
+                <img class="card-specialist-1 owl-lazy" src="image/img-dr-1.png"></img>
                 <div class="docter-1">
                   <h4>Dr. Alena George</h4>
                   <p>Rheumatologist</p>
                 </div>
               </div>
               <div class="specialist-2">
-                <img class="card-specialist-2" src="image/img-dr-2.png"></img>
+                <img class="card-specialist-2 owl-lazy" src="image/img-dr-2.png"></img>
                 <div class="docter-2">
                   <h4>Dr. Ashlynn Aminoff</h4>
                   <p>Adult Psychiatric & Mental Health Nurse Practitioner</p>
                 </div>
               </div> 
               <div class="specialist-3">
-                <img class="card-specialist-3" src="image/img-dr-3.png"></img>
+                <img class="card-specialist-3 owl-lazy" src="image/img-dr-3.png"></img>
                 <div class="docter-3">
                   <h4>Dr. Andrea Sczesny, MD</h4>
                   <p>Emergency Medicine Physician</p>
                 </div>
               </div> 
               <div class="specialist-4">              
-                <img class="card-specialist-4" src="image/img-dr-4.png"></img>
+                <img class="card-specialist-4 owl-lazy" src="image/img-dr-4.png"></img>
                 <div class="docter-4">
                   <h4>Dr. Andrea Sczesny, MD</h4>
                   <p>Emergency Medicine Physician</p>
@@ -301,128 +301,68 @@
       </div>
 
       <!-- *AKHIR SECTION SPECIALIST -->
-      <!-- CUSTOMER SAY -->
+      <!-- *CUSTOMER SAY -->
       <div class="section-customer-say">
         <div class="container">
           <div class="main-customer-say">
-            <h2>RATE WITH EXPERIENCES</h2>
-            <h1>What a <span>Customer</span> Says</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor senectus risus placerat sagittis, quisque. Porttitor adipiscing vitae mauris, euismod urna imperdiet cursus quisque vel. Lectus.</p>
+            <h2>PENILAIAN DARI PENGALAMAN</h2>
+            <h1>Apa yang <span>Pengguna</span> Katakan</h1>
+            <p>Lihat hasil Survei Kepuasan Pelanggan terbaru kami dan testimoni pelanggan utama tentang bagaimana kami bekerja dan melayani para pengguna. Dimulai dari usia dini hingga dewasa</p>
           </div>
-          <div class="card-customer-say">
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper wrapper-customer">
-                <div class="swiper-slide">
+          <div class="">
+            <div class="card-customer-say owl-carousel owl-customer owl-theme">
+              <div class="customer-1">
+                <div class="card card-customer-say-1">
                   <div class="row">
-                    <div class="col-4">
-                      <div class="customer-1">
-                        <div class="card card-customer-say-1">
-                          <div class="row">
-                            <div class="col-md-7">
-                              <div class="card-body">
-                                <h4 class="card-title title-customer-1">Ahmed Dedat</h4>
-                                <p>Engineer</p>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus sem sed amet, scelerisque dui commodo arcu quam. Eleifend magna tincidunt.</p>
-                              </div>
-                            </div>
-                            <div class="col-md-5">
-                              <img src="image/customer-say-1.png" class="img-card-customer-1" alt="" />
-                            </div>
-                          </div>
+                    <div class="col-7">
+                      <div class="card-body">
+                        <h4 class="card-title title-customer-1">Ahmed Dedat</h4>
+                        <p>Engineer</p>
+                        <p class="card-text text-customer-say">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus sem sed amet, scelerisque dui commodo arcu quam. Eleifend magna tincidunt.</p>
+                        <div class="rating-customer">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill start-customer"></i>
                         </div>
                       </div>
                     </div>
-                    <div class="col-4">
-                      <div class="customer-2">
-                        <div class="card card-customer-say-2">
-                          <div class="row">
-                            <div class="col-md-7">
-                              <div class="card-body">
-                                <h4 class="card-title title-customer-1">Ahmed Dedat</h4>
-                                <p>Engineer</p>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus sem sed amet, scelerisque dui commodo arcu quam. Eleifend magna tincidunt.</p>
-                              </div>
-                            </div>
-                            <div class="col-md-5">
-                              <img src="image/customer-say-1.png" class="img-card-customer-1" alt="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="row">
-                    <div class="col-4">
-                      <div class="customer-1">
-                        <div class="card card-customer-say-1">
-                          <div class="row">
-                            <div class="col-md-7">
-                              <div class="card-body">
-                                <h4 class="card-title title-customer-1">Ahmed Dedat</h4>
-                                <p>Engineer</p>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus sem sed amet, scelerisque dui commodo arcu quam. Eleifend magna tincidunt.</p>
-                              </div>
-                            </div>
-                            <div class="col-md-5">
-                              <img src="image/customer-say-1.png" class="img-card-customer-1" alt="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="customer-2">
-                        <div class="card card-customer-say-2">
-                          <div class="row">
-                            <div class="col-md-7">
-                              <div class="card-body">
-                                <h4 class="card-title title-customer-1">Ahmed Dedat</h4>
-                                <p>Engineer</p>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus sem sed amet, scelerisque dui commodo arcu quam. Eleifend magna tincidunt.</p>
-                              </div>
-                            </div>
-                            <div class="col-md-5">
-                              <img src="image/customer-say-1.png" class="img-card-customer-1" alt="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="col-5">
+                      <img src="image/customer-say-1.png" class="owl-lazy img-card-customer-1" alt="" />
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination" id="bullet-customer"></div>
-            </div>
-          </div>
-        </div>
-        
-
-      <!-- BANNER -->
-      <div class="section-banner">
-        <div class="container">
-          <div class="row">
-            <div class="col-5">
-              <div class="banner-img">
-                <img src="image/banner-img.png" alt="" class="img-banner" />
+              <div class="customer-1">
+                <div class="card card-customer-say-2">
+                  <div class="row">
+                    <div class="col-7">
+                      <div class="card-body">
+                        <h4 class="card-title title-customer-1">Ahmed Dedat</h4>
+                        <p>Engineer</p>
+                        <p class="card-text text-customer-say">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus sem sed amet, scelerisque dui commodo arcu quam. Eleifend magna tincidunt.</p>
+                        <div class="rating-customer">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill start-customer"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <img src="image/customer-say-1.png" class="owl-lazy img-card-customer-1" alt="" />
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="col-7">
-              <div class="main-banner">
-                <h1><span>Free</span> Online Consultant and <span>Discount</span> up to <span>40%</span></h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies volutpat et ut vitae ut tortor semper. A nullam turpis id elit amet. Sed nulla laoreet eleifend amet, porttitor augue et lacus. Sit venenatis, eu, mattis
-                  nibh vitae. At donec.
-                </p>
-              </div>
-              <a href="#" class="btn btn-banner text-light text-center pt-3">Get Started</a>
             </div>
           </div>
         </div>
       </div>
-      <!-- *AKHIR BANNER -->
     </main>
+
     <footer>
       <div class="footer pt-5">
         <div class="content-footer container text-light">
@@ -431,14 +371,13 @@
               <div class="brand-footer">
                 <h2>
                   <img src="image/brand-1.png" alt="" />
-
                   His<span>CARE</span>
                 </h2>
                 <p class="text-footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue ac arcu et hendrerit at gravida ornare purus vivamus.</p>
               </div>
               <div class="sosmed-footer">
                 <a href=""><img src="image/icon/icon-ig.svg" alt="" /></a>
-                <a href=""><img src="image/icon/icon-linkedin.svg" alt="" /></a>
+                <a href=""><img src="/image/icon/icon-linkedin.svg" alt="" /></a>
               </div>
             </div>
             <div class="col-12 col-lg-8 main-footer">
@@ -496,29 +435,33 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="/assets/owl/owl.carousel.min.js"></script>
-    <!-- <script>
-      var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script> -->
     <script>
-      $(".owl-carousel").owlCarousel({
+      $(".owl-specialist").owlCarousel({
         loop: true,
-        autoplay:true,
         margin: 10,
-        nav: true,
+        lazyLoad: true,
         responsive: {
           0: {
             items: 1,
           },
           600: {
-            items: 1,
+            items: 2,
           },
           1000: {
             items: 4,
+          },
+        },
+      });
+      $(".owl-customer").owlCarousel({
+        loop: true,
+        margin: 10,
+        lazyLoad: true,
+        responsive: {
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 2,
           },
         },
       });
