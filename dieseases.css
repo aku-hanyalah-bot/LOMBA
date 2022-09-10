@@ -45,6 +45,15 @@ body {
 .active {
   color: var(--second-color) !important;
 }
+.nav-color {
+  background-color: #eaeaea;
+  transition: all ease-in-out 0.5s;
+  box-shadow: 0px 4px 20px #38383889;
+}
+
+.bg-transparent {
+  transition: all ease-in 0.5s;
+}
 .nav-link {
   font-size: 20px;
   color: rgba(48, 91, 119, 0.63);
@@ -104,6 +113,9 @@ body {
 }
 
 /* !HEADER */
+header{
+  padding-top: 10rem;
+}
 .title-header {
   width: 67%;
   height: 207px;
@@ -749,7 +761,8 @@ button,
 @media screen and (min-width: 1900px) {
   /* !NAVBAR */
   .navbar {
-    padding-top: 3rem !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
   }
   .nav-link {
     font-size: 25px;
