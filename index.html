@@ -124,7 +124,7 @@
           </div>
           <div class="card-services">
             <div class="row">
-              <div class="col-6 col-sm-6 col-lg-2">
+              <div class="col-12 col-sm-6 col-lg-2">
                 <div class="card card-services-1">
                   <img src="image/icon/icon-service-1.svg" class="img-fluid img-card-service" alt="..." />
                   <div class="card-body card-body-services">
@@ -133,7 +133,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-6 col-lg-2">
+              <div class="col-12 col-sm-6 col-lg-2">
                 <div class="card card-services-2">
                   <img src="image/icon/icon-service-2.svg" class="img-fluid img-card-service" alt="..." />
                   <div class="card-body card-body-services">
@@ -142,7 +142,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-6 col-lg-2">
+              <div class="col-12 col-sm-6 col-lg-2">
                 <div class="card card-services-3">
                   <img src="image/icon/icon-service-3.svg" class="img-fluid img-card-service" alt="..." />
                   <div class="card-body card-body-services">
@@ -151,7 +151,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-6 col-lg-2">
+              <div class="col-12 col-sm-6 col-lg-2">
                 <div class="card card-services-4">
                   <img src="image/icon/icon-service-4.svg" class="img-fluid img-card-service" alt="..." />
                   <div class="card-body card-body-services">
@@ -185,7 +185,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rutrum rhoncus semper sit feugiat viverra malesuada maecenas. Amet egestas adipiscing in nisl lectus enim.</p>
               
               <div class="row card-works">
-                <div class="col-4 col-sm-12 col-xl-6">
+                <div class="col-12 col-sm-12 col-xl-6">
                   <div class="card card-works-1">
                     <img src="image/icon/icon-work-1.svg" class="img-fluid img-card-work" alt="..." />
                     <div class="card-body">
@@ -193,6 +193,8 @@
                       <p class="card-text text-card-works">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget semper consequat.</p>
                     </div>
                   </div>
+                </div>
+                <div class="col-12 col-sm-12 col-xl-6">
                   <div class="card card-works-2">
                     <img src="image/icon/icon-work-2.svg" class= "img-fluid img-card-work" alt="..." />
                     <div class="card-body">
@@ -201,7 +203,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4 col-sm-12 col-xl-6 ">
+                <div class="col-12 col-sm-12 col-xl-6 ">
                   <div class="card card-works-3">
                     <img src="image/icon/icon-work-3.svg" class="img-fluid img-card-work" alt="..." />
                     <div class="card-body">
@@ -209,6 +211,8 @@
                       <p class="card-text text-card-works">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget semper consequat.</p>
                     </div>
                   </div>
+                </div>
+                <div class="col-12 col-sm-12 col-xl-6">
                   <div class="card card-works-4">
                     <img src="image/icon/icon-work-4.svg" class="img-fluid img-card-work" alt="..." />
                     <div class="card-body">
@@ -266,28 +270,28 @@
           </div>
           <div class="owl-carousel owl-specialist owl-theme">         
               <div class="specialist-1">
-                <img class="card-specialist-1 owl-lazy" src="image/img-dr-1.png"></img>
+                <img class="card-specialist-1 item" src="image/img-dr-1.png"></img>
                 <div class="docter-1">
                   <h4>Dr. Alena George</h4>
                   <p>Rheumatologist</p>
                 </div>
               </div>
               <div class="specialist-2">
-                <img class="card-specialist-2 owl-lazy" src="image/img-dr-2.png"></img>
+                <img class="card-specialist-2 item" src="image/img-dr-2.png"></img>
                 <div class="docter-2">
                   <h4>Dr. Ashlynn Aminoff</h4>
                   <p>Adult Psychiatric & Mental Health Nurse Practitioner</p>
                 </div>
               </div> 
               <div class="specialist-3">
-                <img class="card-specialist-3 owl-lazy" src="image/img-dr-3.png"></img>
+                <img class="card-specialist-3 item" src="image/img-dr-3.png"></img>
                 <div class="docter-3">
                   <h4>Dr. Andrea Sczesny, MD</h4>
                   <p>Emergency Medicine Physician</p>
                 </div>
               </div> 
               <div class="specialist-4">              
-                <img class="card-specialist-4 owl-lazy" src="image/img-dr-4.png"></img>
+                <img class="card-specialist-4 item" src="image/img-dr-4.png"></img>
                 <div class="docter-4">
                   <h4>Dr. Andrea Sczesny, MD</h4>
                   <p>Emergency Medicine Physician</p>
@@ -438,7 +442,6 @@
       $(".owl-specialist").owlCarousel({
         loop: true,
         margin: 10,
-        lazyLoad: true,
         responsive: {
           0: {
             items: 1,
@@ -454,8 +457,10 @@
       $(".owl-customer").owlCarousel({
         loop: true,
         margin: 10,
-        lazyLoad: true,
         responsive: {
+          0: {
+            items: 1,
+          },
         480: {
             items: 1,
           },
