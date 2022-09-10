@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --first-color: #1b262c;
+  --second-color: #0f4c75;
+  --third-color: #3282b8;
+  --fourth-color: #bbe1fa;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  overflow-x: hidden;
+  background: linear-gradient(0.45deg, #ffffff 10.14%, #ffffff 10.17%, #bbe1fa 279.27%);
+}
+header {
+  width: 100%;
+}
+
+/* !NAVBAR */
+
+.navbar-brand {
+  font-size: 26px;
+  line-height: 54px;
+  color: var(--second-color) !important;
+  padding-left: 20px;
+}
+.navbar-brand img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+.navbar-brand span {
+  margin-left: 15px;
+}
+.navbar-brand b {
+  color: var(--second-color);
+  font-weight: bolder;
+}
+
+.active {
+  color: var(--second-color) !important;
+}
+.nav-color {
+  color: rgba(48, 91, 119, 0.63);
+  transition: all ease-in-out 0.5s;
+  box-shadow: 0px 4px 20px #38383889;
+}
+.nav-link {
+  font-size: 20px;
+  color: rgba(48, 91, 119, 0.63);
+}
+.bg-transparent {
+  transition: all ease-in 0.5s;
+}
+.nav-link:hover,
+.nav-link:focus,
+.login {
+  color: var(--second-color);
+}
+.login img {
+  margin-left: 15px;
+}
+
+/*HAMBURGER ANIMATION*/
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(3) {
+  width: 50%;
+  margin-left: 12px;
+}
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: var(--fourth-color);
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: var(--fourth-color);
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+}
+.section-about-us #about-us-1 {
+  background: url("../images/bg-about-us.png") 100% 100% no-repeat;
+  background-size: cover;
+}
+
+.section-about-us .title-main {
+  font-family: "PoppinsBold";
+  font-size: 40px;
+  line-height: 60px;
+  color: #121212;
+}
+
+.section-about-us .title {
+  font-family: "PoppinsMedium";
+  font-size: 20px;
+  line-height: 30px;
+  color: #121212;
+}
+
+.section-about-us .paragraph-main {
+  font-family: "Poppins";
+  font-size: 18px;
+  line-height: 27px;
+  color: #121212;
+  opacity: 0.75;
+}
+
+.section-about-us .paragraph {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 166.2%;
+  color: #121212;
+  opacity: 0.75;
+}
+
+.section-about-us .row .row i {
+  color: #2447f9;
+  opacity: 0.75;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.section-about-us #about-us-2 {
+  background: url("../images/bg-about-us-2.png") 100% 100% no-repeat;
+  background-size: contain;
+}
+
+.section-about-us #about-us-2 .title {
+  font-family: "PoppinsSemiBold";
+  font-size: 20px;
+  line-height: 125.5%;
+  color: #34364a;
+}
+
+.section-about-us #about-us-2 .text {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 24px;
+  color: #34364a;
+}
+
+.section-about-us #about-us-2 a i {
+  color: #34364a;
+  font-size: 21px;
+  border-radius: 5px;
+}
+
+.section-about-us #about-us-2 .card img {
+  width: 212px;
+}

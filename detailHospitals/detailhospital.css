@@ -40,7 +40,7 @@ body {
   color: var(--second-color) !important;
 }
 .nav-color {
-  color: rgba(48, 91, 119, 0.63);
+  background: #eaeaea;
   transition: all ease-in-out 0.5s;
   box-shadow: 0px 4px 20px #38383889;
 }
@@ -266,8 +266,47 @@ input:checked ~ .acc-content {
   padding: 1em;
 }
 /* !SERICE HOSPITAL */
-.fasilitas h5 {
+.service-hospital {
+  margin-bottom: 7rem;
+}
+.main-fasilitas h5 {
   padding-bottom: 25px;
 }
+.bi-check-circle {
+  background: rgba(36, 71, 249, 0.2);
+  color: rgba(36, 71, 249, 1);
+}
+.fasilitas-1 span,
+.fasilitas-2 span,
+.fasilitas-3 span,
+.fasilitas-4 span {
+  margin-left: 12px;
+}
+.fasilitas-1,
 .fasilitas-2 {
+  padding-bottom: 20px;
+}
+.main-fasilitas-2 {
+  margin-left: 40px;
+}
+.main-fasilitas-2 h5 {
+  padding-bottom: 25px;
+}
+/* !GAELERI RUMAH SAKIT */
+.galery-rumah-sakit {
+  height: 100vh;
+}
+.galery-rumah-sakit h5 {
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 30px;
+  color: rgba(18, 18, 18, 0.75);
+}
+.galeri-1,
+.galeri-2,
+.galeri-3,
+.galeri-4 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
