@@ -15,6 +15,7 @@
 }
 body {
   overflow-x: hidden;
+  background: linear-gradient(0.45deg, #ffffff 10.14%, #ffffff 10.17%, #bbe1fa 279.27%);
 }
 header {
   width: 100%;
@@ -58,7 +59,7 @@ header {
 .nav-link:hover,
 .nav-link:focus,
 .login {
-  color: var(--fourth-color);
+  color: var(--second-color);
 }
 .login img {
   margin-left: 15px;
@@ -85,4 +86,75 @@ header {
 }
 .menu-toggle input:checked ~ span:nth-child(3) {
   transform: scale(0);
+}
+.section-about-us #about-us-1 {
+  background: url("../images/bg-about-us.png") 100% 100% no-repeat;
+  background-size: cover;
+}
+
+.section-about-us .title-main {
+  font-family: "PoppinsBold";
+  font-size: 40px;
+  line-height: 60px;
+  color: #121212;
+}
+
+.section-about-us .title {
+  font-family: "PoppinsMedium";
+  font-size: 20px;
+  line-height: 30px;
+  color: #121212;
+}
+
+.section-about-us .paragraph-main {
+  font-family: "Poppins";
+  font-size: 18px;
+  line-height: 27px;
+  color: #121212;
+  opacity: 0.75;
+}
+
+.section-about-us .paragraph {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 166.2%;
+  color: #121212;
+  opacity: 0.75;
+}
+
+.section-about-us .row .row i {
+  color: #2447f9;
+  opacity: 0.75;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.section-about-us #about-us-2 {
+  background: url("../images/bg-about-us-2.png") 100% 100% no-repeat;
+  background-size: contain;
+}
+
+.section-about-us #about-us-2 .title {
+  font-family: "PoppinsSemiBold";
+  font-size: 20px;
+  line-height: 125.5%;
+  color: #34364a;
+}
+
+.section-about-us #about-us-2 .text {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 24px;
+  color: #34364a;
+}
+
+.section-about-us #about-us-2 a i {
+  color: #34364a;
+  font-size: 21px;
+  border-radius: 5px;
+}
+
+.section-about-us #about-us-2 .card img {
+  width: 212px;
 }
