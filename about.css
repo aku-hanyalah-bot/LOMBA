@@ -15,8 +15,7 @@
 }
 body {
   overflow-x: hidden;
-  background: linear-gradient(0.45deg, #FFFFFF 10.14%, #FFFFFF 10.17%, #BBE1FA 279.27%);
-
+  background: linear-gradient(0.45deg, #ffffff 10.14%, #ffffff 10.17%, #bbe1fa 279.27%);
 }
 header {
   width: 100%;
@@ -151,48 +150,48 @@ header {
   line-height: 22px;
 }
 
-#about-us-1{
-  margin-top:8rem ;
+#about-us-1 {
+  margin-top: 8rem;
   padding: 1em 3em 1em 3em;
   background-color: white;
   width: max-content;
-  border-radius:  0px 360px 0px 0px ;
+  border-radius: 0px 360px 0px 0px;
 }
 #about-us-1 .title,
 #about-us-1 .paragraph-main,
 #about-us-1 .paragraph,
-#about-us-1 .title-main{
+#about-us-1 .title-main {
   width: 700px;
 }
-.container .row{
+.container .row {
   width: 900px;
   display: block;
 }
 .title-main {
-  font-weight:600;
+  font-weight: 600;
   color: var(--second-color);
 }
-.paragraph{
+.paragraph {
   width: 50%;
 }
-#about-us-1 .title{
-color: var(--third-color) !important;
+#about-us-1 .title {
+  color: var(--third-color) !important;
 }
 
-.developers .row{
+.developers .row {
   display: flex;
-  flex-direction: row ;
+  flex-direction: row;
   flex-wrap: wrap;
 }
-.developers img{
+.developers img {
   width: 300px;
   height: auto;
   border-radius: 20px;
 }
-.contact-us a{
+.contact-us a {
   text-decoration: none;
   margin-left: 5px;
   color: #1b262c;
-  padding-top:2em;
+  padding-top: 2em;
   padding-bottom: 2em;
 }
