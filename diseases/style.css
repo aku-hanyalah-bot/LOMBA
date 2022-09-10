@@ -43,14 +43,22 @@ header {
 .active {
   color: var(--second-color) !important;
 }
+.nav-color {
+  color: rgba(48, 91, 119, 0.63);
+  transition: all ease-in-out 0.5s;
+  box-shadow: 0px 4px 20px #38383889;
+}
 .nav-link {
   font-size: 20px;
   color: rgba(48, 91, 119, 0.63);
 }
+.bg-transparent {
+  transition: all ease-in 0.5s;
+}
 .nav-link:hover,
 .nav-link:focus,
 .login {
-  color: var(--second-color);
+  color: var(--fourth-color);
 }
 .login img {
   margin-left: 15px;
